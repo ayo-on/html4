@@ -5,26 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="4.css">
 </head>
-<body><pre>    - 응답상태 코드
-    - 1XX: 요청을 받았고, 작업을 진행 중이라는 의미
-    - 2XX: 서버가 요청을 수락했음을 의미
-        - 200 OK: 클라이언트 요청을 수락했고 처리가 잘 되었음을 의미
-    - 3XX: 요청에는 문제가 없지만, 요청에 대한 optional한 처리
-        - 304 Not Modified: 요청한 리소스가 변경되지 않았음을 의미
-        - 301, 302는 리디렉션(Redirection)과 관련
-        - 영구이동, 임시이동
-- 지금 요청한 리소스의 위치가 바뀐 경우
-- 301과 302는 리소스의 새로운 위치를 알려준다.
-- 4XX: 클라이언트 요청 오류(요청에 문제가 있는 경우)
-    - 400 Bad Request: 오탈자, 없는 리소스
-    - 401 Unauthorized, 403 Forbidden
-        - 둘 다 권한과 관련된 오류
-        - 401은 인증키가 없는 경우에
-        - 403은 해당 리소스에 대한 접근 권한이 없는 경우
-    - 404 Not Found: 리소스를 찾을 수 없는 경우
-    - 5XX: 서버 에러(요청을 처리하다가 서버에서 오류가 발생한 경우)
-    - 500 Internel Server Error
-        - 예를 들면 코드에서 문제가 발생하는 경우</pre>
+<body>
+    <body style='border: 0.5px dashed red'>
+        <!--  -->
+            <header id="header">
+                <!-- 블록기반의 태그들 -->
+                <h1 style='border: 0.5px dashed green'> 내가 좋아하는 것들😘 </h1>
+                <p style='border: 0.5px dashed yellow'> ① ② ③ </p>
+            </header>
+    
+            <content id="container">
+                <article id="divs">
+                    <div class="special" style='border: 0.5px dashed black; width:205px; height:300px'>
+                        <img src=".\data\1.jpg" id="1" width="200"> 친구랑 데이트❤️
+                    </div>
+                    <div class="special"style='border: 0.5px dashed black; width:205px; height:230px'>
+                        <img src=".\data\2.jpg" id="2" width="200"> bts 지민이의 새끼손가락😍
+                    </div>
+                    <div style='border: 0.5px dashed black; width:206px; height:250px'>
+                        <img src=".\data\3.jpg" id="3" width="200"> 이모보다 아이스크림이 좋은 조카💕
+                    </div>
+                </article>
+    
+                <article id="spans">
+                    <!-- 인라인기반의 태그들 -->
+                    <span class="special" style='border: 1px dashed purple; width:100px; height:100px'> SPAN1
+                    </span>
+                    <span class="special" style='border: 1px dashed purple; width:100px; height:100px'> SPAN2
+                    </span>
+                    <span style='border: 1px dashed purple; width:100px; height:100px'> SPAN3
+                    </span>
+                </article>
+            </content><br><br>
+            <footer id="footer">
+                정아윤<br> dlbia29@naver.com
+            </footer>
 </body>
 </html>

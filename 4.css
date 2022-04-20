@@ -1,0 +1,26 @@
+div {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(107, 209, 107);
+    display: block;
+    }
+
+span {
+    margin: 20px;
+    padding: 20px;
+    background-color: blue;
+    display: inline;}
+
+.special {
+    position:sticky;
+    left: 30px;
+    top: 30px;
+}
+
+footer {
+    background-color:aqua ;
+    color :brown;
+    position: sticky;
+    left: 30px;
+    top: 30px;
+}
